@@ -1,0 +1,25 @@
+{
+  "name": "printformer-ui-skeleton",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "printformer",
+    "ui",
+    "skelton"
+  ],
+  "license": "MIT",
+  "author": "luc@rissc.de",
+  "scripts": {
+    "build": "parcel build index.html --no-cache --public-url ./",
+    "dev": "parcel index.html --open",
+    "postbuild": "cd dist && zip -r ../${npm_package_name}-${npm_package_version}.zip ."
+  },
+  "dependencies": {
+    "@rissc/printformer-editor-client": "^1.0.34",
+    "@rissc/printformer-ts-common": "^1.0.13",
+    "eventemitter3": "^4.0.7"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
